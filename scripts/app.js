@@ -85,7 +85,7 @@ APP.Main = (function() {
     }
 
     // Colorize on complete.
-    if (storyLoadCount === 0)
+    if (storyLoadCount === 0) {
       // colorizeAndScaleStories();
   }
 
@@ -252,7 +252,7 @@ APP.Main = (function() {
    * Does this really add anything? Can we do this kind
    * of work in a cheaper way?
    */
-  /*function colorizeAndScaleStories() {
+  function colorizeAndScaleStories() {
 
     var storyElements = document.querySelectorAll('.story');
 
@@ -283,7 +283,7 @@ APP.Main = (function() {
       score.style.backgroundColor = 'hsl(42, ' + saturation + '%, 50%)';
       title.style.opacity = opacity;
     }
-  } */
+  } 
 
   main.addEventListener('touchstart', function(evt) {
 
