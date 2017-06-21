@@ -85,8 +85,8 @@ APP.Main = (function() {
     }
 
     // Colorize on complete.
-    if (storyLoadCount === 0)
-      colorizeAndScaleStories();
+    // if (storyLoadCount === 0)
+      // colorizeAndScaleStories();
   }
 
   function onStoryClick(details) {
@@ -252,7 +252,8 @@ APP.Main = (function() {
    * Does this really add anything? Can we do this kind
    * of work in a cheaper way?
    */
-  function colorizeAndScaleStories() {
+
+  /*function colorizeAndScaleStories() {
 
     var storyElements = document.querySelectorAll('.story');
 
@@ -284,6 +285,7 @@ APP.Main = (function() {
       title.style.opacity = opacity;
     }
   }
+  */
 
   main.addEventListener('touchstart', function(evt) {
 
@@ -302,7 +304,7 @@ APP.Main = (function() {
     var scrollTopCapped = Math.min(70, main.scrollTop);
     var scaleString = 'scale(' + (1 - (scrollTopCapped / 300)) + ')';
 
-    colorizeAndScaleStories();
+    // colorizeAndScaleStories();
 
     header.style.height = (156 - scrollTopCapped) + 'px';
     headerTitles.style.webkitTransform = scaleString;
