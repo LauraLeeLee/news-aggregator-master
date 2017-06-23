@@ -199,8 +199,6 @@ main.loading {
   line-height: 40px;
 
   box-shadow:
-      0px 2px 5px 0px rgba(0, 0, 0, 0.06),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.08),
       0px 2px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -233,10 +231,7 @@ main.loading {
   background: white;
   z-index: 2;
   box-shadow:
-      0px 2px 5px 0px rgba(0, 0, 0, 0.06),
-      0px 2px 5px 0px rgba(0, 0, 0, 0.08),
       0px 2px 7px 0px rgba(0, 0, 0, 0.10);
-
   overflow: hidden;
   transition: transform 0.3s;
   will-change: transform;
@@ -248,11 +243,6 @@ main.loading {
 
 .story-details.hidden {
   transform: translateX(0);
-}
-
-.story-details * {
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .story-details__content {
